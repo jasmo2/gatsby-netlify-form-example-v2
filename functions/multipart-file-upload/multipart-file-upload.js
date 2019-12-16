@@ -18,7 +18,7 @@ exports.handler = async function(event, context) {
   const form = encode(event.body)
   try {
     await util.promisify((err, res) =>
-      form.submit('https://gatsby-netlify-form-example-v2.netlify.com', function(err, res) {
+      form.submit('https://admiring-blackwell-85a2ce.netlify.com', function(err, res) {
         // res – response object (http.IncomingMessage)  //
         res.resume()
       }),
